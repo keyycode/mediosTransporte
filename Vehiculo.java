@@ -2,20 +2,21 @@
 package clases.implementacion.mediosdetransporte;
 
 
-public class Vehiculo {
+abstract public class Vehiculo {
     
     public String placa;
     public String marca;
     public Integer numeroPasajeros;
     private String tipoVehiculo; 
-    
 
     public Vehiculo(String placa, String marca, Integer numeroPasajeros) {
         this.placa = placa;
         this.marca = marca;
         this.numeroPasajeros = numeroPasajeros;
-        
     }
+    
+    
+    
 
     public String getTipoVehiculo() {
         return tipoVehiculo;
@@ -37,8 +38,6 @@ public class Vehiculo {
         System.out.println("Acelerando");   
     }
     
-    public void conducir(){
-    }
-   
+    abstract void conducir();
     
 }
